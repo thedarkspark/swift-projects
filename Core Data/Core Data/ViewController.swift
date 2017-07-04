@@ -8,6 +8,8 @@
 
 import UIKit
 
+import CoreData
+
 // This is just a test to see if the github initialized correctly.
 
 class ViewController: UIViewController {
