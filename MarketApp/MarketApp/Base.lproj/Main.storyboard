@@ -42,6 +42,9 @@
                                     <constraint firstAttribute="width" constant="80" id="u9b-j7-NkV"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="enterBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLq-Ll-OWX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,6 +59,9 @@
                             <constraint firstItem="f6N-Bd-P4e" firstAttribute="top" secondItem="Kon-Q3-QFa" secondAttribute="bottom" constant="12" id="tpt-do-bGc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtField" destination="Kon-Q3-QFa" id="Lvx-gW-fRR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
