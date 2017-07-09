@@ -38,11 +38,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-P9-oFk">
+                                <rect key="frame" x="147.5" y="201" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="avD-qR-HuF"/>
+                                    <constraint firstAttribute="height" constant="40" id="vbF-OV-54j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PPh-Pw-Wsp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Ma-Xk-s4m"/>
+                            <constraint firstItem="7Ai-P9-oFk" firstAttribute="top" secondItem="PRH-5r-NEf" secondAttribute="bottom" constant="8" id="IHd-4i-0oV"/>
                             <constraint firstItem="PPh-Pw-Wsp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="VuL-6e-UaN"/>
+                            <constraint firstItem="7Ai-P9-oFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X3Q-nt-okj"/>
                             <constraint firstItem="PRH-5r-NEf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZNI-aa-WNs"/>
                             <constraint firstItem="PRH-5r-NEf" firstAttribute="top" secondItem="PPh-Pw-Wsp" secondAttribute="bottom" constant="18" id="hPw-TO-ptb"/>
                         </constraints>
