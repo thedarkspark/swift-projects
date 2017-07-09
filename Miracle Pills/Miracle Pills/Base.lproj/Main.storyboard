@@ -56,6 +56,21 @@
                                     <constraint firstAttribute="height" constant="1" id="q3X-if-uqh"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Full Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hlx-Ud-dwG">
+                                <rect key="frame" x="36" y="247" width="303" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jVK-tV-1bY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JZ8-aK-tbe">
+                                <rect key="frame" x="36" y="285" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -63,10 +78,14 @@
                             <constraint firstItem="PPh-Pw-Wsp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Ma-Xk-s4m"/>
                             <constraint firstItem="Mri-Xw-Y6s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="9hA-mo-aLG"/>
                             <constraint firstItem="PPh-Pw-Wsp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="VuL-6e-UaN"/>
+                            <constraint firstItem="Hlx-Ud-dwG" firstAttribute="leading" secondItem="Mri-Xw-Y6s" secondAttribute="leading" id="Yfs-kM-Avh"/>
                             <constraint firstItem="PRH-5r-NEf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZNI-aa-WNs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Mri-Xw-Y6s" secondAttribute="trailing" constant="20" id="fW4-DQ-bso"/>
+                            <constraint firstItem="JZ8-aK-tbe" firstAttribute="trailing" secondItem="Hlx-Ud-dwG" secondAttribute="trailing" id="fcZ-n5-5KI"/>
+                            <constraint firstItem="JZ8-aK-tbe" firstAttribute="leading" secondItem="Hlx-Ud-dwG" secondAttribute="leading" id="g6w-Gs-n2D"/>
                             <constraint firstItem="Mri-Xw-Y6s" firstAttribute="top" secondItem="7Ai-P9-oFk" secondAttribute="bottom" constant="10" id="h9n-Wv-twg"/>
                             <constraint firstItem="PRH-5r-NEf" firstAttribute="top" secondItem="PPh-Pw-Wsp" secondAttribute="bottom" constant="18" id="hPw-TO-ptb"/>
+                            <constraint firstItem="Hlx-Ud-dwG" firstAttribute="trailing" secondItem="Mri-Xw-Y6s" secondAttribute="trailing" id="rfQ-Tj-y3j"/>
                             <constraint firstItem="7Ai-P9-oFk" firstAttribute="centerX" secondItem="PRH-5r-NEf" secondAttribute="centerX" id="sZN-C6-7CU"/>
                             <constraint firstItem="Mri-Xw-Y6s" firstAttribute="centerX" secondItem="7Ai-P9-oFk" secondAttribute="centerX" id="uHF-3K-Zwr"/>
                         </constraints>
