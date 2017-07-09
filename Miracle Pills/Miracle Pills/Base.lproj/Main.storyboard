@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A291m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,18 +18,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="PPh-Pw-Wsp">
-                                <rect key="frame" x="152.5" y="60" width="70" height="70"/>
+                                <rect key="frame" x="477" y="60" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="cxe-bh-0v8"/>
                                     <constraint firstAttribute="height" constant="70" id="yeF-BN-k8T"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miracle Pills" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRH-5r-NEf">
-                                <rect key="frame" x="127.5" y="148" width="120" height="45"/>
+                                <rect key="frame" x="452" y="148" width="120" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Zmb-EA-QA5"/>
                                     <constraint firstAttribute="width" constant="120" id="vLp-kg-WVQ"/>
@@ -39,10 +39,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-P9-oFk">
-                                <rect key="frame" x="147.5" y="201" width="80" height="40"/>
+                                <rect key="frame" x="472" y="188" width="80" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="avD-qR-HuF"/>
-                                    <constraint firstAttribute="height" constant="40" id="vbF-OV-54j"/>
+                                    <constraint firstAttribute="height" constant="40" id="WVo-3N-ssN"/>
+                                    <constraint firstAttribute="width" constant="80" id="dHB-UW-aWF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -51,12 +51,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7Ai-P9-oFk" firstAttribute="top" secondItem="PPh-Pw-Wsp" secondAttribute="bottom" constant="58" id="4l1-Js-wvH"/>
                             <constraint firstItem="PPh-Pw-Wsp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Ma-Xk-s4m"/>
-                            <constraint firstItem="7Ai-P9-oFk" firstAttribute="top" secondItem="PRH-5r-NEf" secondAttribute="bottom" constant="8" id="IHd-4i-0oV"/>
                             <constraint firstItem="PPh-Pw-Wsp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="VuL-6e-UaN"/>
-                            <constraint firstItem="7Ai-P9-oFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X3Q-nt-okj"/>
                             <constraint firstItem="PRH-5r-NEf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZNI-aa-WNs"/>
                             <constraint firstItem="PRH-5r-NEf" firstAttribute="top" secondItem="PPh-Pw-Wsp" secondAttribute="bottom" constant="18" id="hPw-TO-ptb"/>
+                            <constraint firstItem="7Ai-P9-oFk" firstAttribute="centerX" secondItem="PRH-5r-NEf" secondAttribute="centerX" id="sZN-C6-7CU"/>
                         </constraints>
                     </view>
                 </viewController>
