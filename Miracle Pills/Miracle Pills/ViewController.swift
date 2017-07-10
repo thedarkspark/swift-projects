@@ -14,6 +14,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBOutlet weak var stateBtnText: UIButton!
     
+    let states = ["Illinois", "Indiana", "Ohio", "Maine", "New-York"]
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -39,10 +41,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         
-        return 0
+        return 1
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        return states.count
         
     }
 
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        return states[row]
+        
+    }
+    
 }
 
 
