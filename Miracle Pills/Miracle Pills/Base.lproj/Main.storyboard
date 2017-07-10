@@ -54,6 +54,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tud-Lb-Me0">
                                 <rect key="frame" x="36" y="458" width="128" height="30"/>
                                 <state key="normal" title="Choose Your State"/>
+                                <connections>
+                                    <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXh-an-pdJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ai-P9-oFk">
                                 <rect key="frame" x="148" y="186" width="80" height="20"/>
@@ -102,7 +105,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-oh-gP9">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-oh-gP9">
                                 <rect key="frame" x="28" y="496" width="320" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="124" id="hFu-sr-wQb"/>
@@ -143,6 +146,10 @@
                             <constraint firstItem="JZ8-aK-tbe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="xzP-LT-WNZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stateBtnText" destination="Tud-Lb-Me0" id="aMl-s3-b16"/>
+                        <outlet property="statePicker" destination="Fxw-oh-gP9" id="b0c-yL-jes"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
