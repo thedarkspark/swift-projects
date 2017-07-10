@@ -37,6 +37,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @IBAction func stateBtnPressed(_ sender: Any) {
         
+        statePicker.isHidden = false
+        
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -54,6 +56,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         return states[row]
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+        stateBtnText.setTitle(states[row], for: UIControlState.normal)
+        
+        statePicker.isHidden = true
         
     }
     

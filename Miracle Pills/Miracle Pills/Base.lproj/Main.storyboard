@@ -105,7 +105,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-oh-gP9">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxw-oh-gP9">
                                 <rect key="frame" x="28" y="496" width="320" height="124"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="124" id="hFu-sr-wQb"/>
