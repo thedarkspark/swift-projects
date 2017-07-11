@@ -25,7 +25,13 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfK-LE-bWq">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Store" id="mZD-cM-32V"/>
+                                    <navigationItem title="Store" id="mZD-cM-32V">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="jCM-PR-aHz">
+                                            <connections>
+                                                <action selector="backBtn:" destination="BYZ-38-t0r" id="HWn-gr-Dze"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-Q3-QFa">
@@ -41,7 +47,7 @@
                                     <constraint firstAttribute="height" constant="35" id="h6R-Ky-fNP"/>
                                     <constraint firstAttribute="width" constant="80" id="u9b-j7-NkV"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="enterBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLq-Ll-OWX"/>
                                 </connections>

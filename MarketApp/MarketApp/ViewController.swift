@@ -19,7 +19,13 @@ class ViewController: UIViewController {
 
     @IBAction func enterBtn(_ sender: Any) {
         
+        //to do a little later. 
+        
     }
-
+    
+    @IBAction func backBtn(_ sender: Any) {
+        
+    }
+    
 }
 
