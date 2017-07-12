@@ -29,22 +29,40 @@
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-L9-ho8">
-                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <rect key="frame" x="16" y="102" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bsI-w3-k2i"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvT-Bs-QZi">
+                                <rect key="frame" x="150" y="162" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.40544205904006958" green="0.96918588876724243" blue="0.18635764718055725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="buAddStore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mEY-OB-8IU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bbD-L9-ho8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nm9-om-adh"/>
+                            <constraint firstItem="bbD-L9-ho8" firstAttribute="top" secondItem="61b-1C-Hmn" secondAttribute="bottom" constant="30" id="PSJ-Zn-w9t"/>
+                            <constraint firstItem="bbD-L9-ho8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VKp-5X-8GM"/>
+                            <constraint firstItem="dvT-Bs-QZi" firstAttribute="top" secondItem="bbD-L9-ho8" secondAttribute="bottom" constant="30" id="dJB-u4-Z2t"/>
                             <constraint firstAttribute="trailing" secondItem="61b-1C-Hmn" secondAttribute="trailing" id="hbC-M6-tjL"/>
-                            <constraint firstItem="bbD-L9-ho8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="irh-Qz-wZn"/>
-                            <constraint firstItem="bbD-L9-ho8" firstAttribute="top" secondItem="61b-1C-Hmn" secondAttribute="bottom" constant="8" id="ocu-yV-eUX"/>
+                            <constraint firstItem="bbD-L9-ho8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="i9d-oT-Gr8"/>
+                            <constraint firstItem="dvT-Bs-QZi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="134" id="oat-zs-ckN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dvT-Bs-QZi" secondAttribute="trailing" constant="134" id="upf-lK-scc"/>
                             <constraint firstItem="61b-1C-Hmn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="uvq-pA-fjO"/>
                             <constraint firstItem="61b-1C-Hmn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zA2-RA-cXu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtStoreName" destination="bbD-L9-ho8" id="QYO-hU-grT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
