@@ -20,7 +20,12 @@ class ViewController: UIViewController {
 
     @IBAction func buAddStore(_ sender: Any) {
         
-        //To Do you need to add the store. 
+        //To Do you need to add the store.
+        
+    }
+    @IBAction func buBack(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
         
     }
     

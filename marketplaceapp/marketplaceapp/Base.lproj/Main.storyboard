@@ -25,7 +25,13 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61b-1C-Hmn">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Add Store" id="SJ1-qP-GiU"/>
+                                    <navigationItem title="Add Store" id="SJ1-qP-GiU">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="E2D-5B-tOt">
+                                            <connections>
+                                                <action selector="buBack:" destination="BYZ-38-t0r" id="7fp-XY-b1l"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bbD-L9-ho8">
