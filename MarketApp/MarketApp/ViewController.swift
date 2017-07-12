@@ -20,10 +20,27 @@ class ViewController: UIViewController {
     @IBAction func enterBtn(_ sender: Any) {
         
         //to do a little later. 
+        let newStore = Store_type(context: context)
+        
+        newStore.storename = txtField.text
+        
+        do{
+            
+            ad.saveContext()
+            
+            txtField.text = ""
+            
+        } catch {
+            
+            print("Cannot print to screen")
+        
+        }
         
     }
     
     @IBAction func backBtn(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
         
     }
     

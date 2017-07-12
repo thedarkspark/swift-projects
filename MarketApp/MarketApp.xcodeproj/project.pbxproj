@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA54EBEB1F14AACE003C7C15 /* addItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54EBEA1F14AACE003C7C15 /* addItemViewController.swift */; };
 		BAB6D4DB1F0CC13400920820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6D4DA1F0CC13400920820 /* AppDelegate.swift */; };
 		BAB6D4DD1F0CC13400920820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6D4DC1F0CC13400920820 /* ViewController.swift */; };
 		BAB6D4E01F0CC13400920820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB6D4DE1F0CC13400920820 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA54EBEA1F14AACE003C7C15 /* addItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addItemViewController.swift; sourceTree = "<group>"; };
 		BAB6D4D71F0CC13400920820 /* MarketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB6D4DA1F0CC13400920820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAB6D4DC1F0CC13400920820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				BAB6D4DA1F0CC13400920820 /* AppDelegate.swift */,
 				BAB6D4DC1F0CC13400920820 /* ViewController.swift */,
 				BAB6D4DE1F0CC13400920820 /* Main.storyboard */,
+				BA54EBEA1F14AACE003C7C15 /* addItemViewController.swift */,
 				BAB6D4E41F0CC13400920820 /* Assets.xcassets */,
 				BAB6D4E61F0CC13400920820 /* LaunchScreen.storyboard */,
 				BAB6D4E91F0CC13400920820 /* Info.plist */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAB6D4DD1F0CC13400920820 /* ViewController.swift in Sources */,
+				BA54EBEB1F14AACE003C7C15 /* addItemViewController.swift in Sources */,
 				BAB6D4DB1F0CC13400920820 /* AppDelegate.swift in Sources */,
 				BAB6D4E31F0CC13400920820 /* MarketApp.xcdatamodeld in Sources */,
 			);
@@ -306,6 +310,7 @@
 				BAB6D4EE1F0CC13400920820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
