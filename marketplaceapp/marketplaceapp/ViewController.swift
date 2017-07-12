@@ -22,7 +22,16 @@ class ViewController: UIViewController {
         
         //To Do you need to add the store.
         
+        let newStore = StoreType(context: context)
+        
+        newStore.store_name = txtStoreName.text
+        
+        ad.saveContext()
+        
+        txtStoreName.text = ""
+        
     }
+    
     @IBAction func buBack(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
