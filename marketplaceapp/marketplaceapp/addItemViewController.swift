@@ -8,11 +8,15 @@
 
 import UIKit
 
+import CoreData
+
 class addItemViewController: UIViewController {
 
     @IBOutlet weak var txtItemName: UITextField!
     
     @IBOutlet weak var storePicker: UIPickerView!
+    
+    var listOfStores = [StoreType]()
     
     override func viewDidLoad() {
         
@@ -21,6 +25,18 @@ class addItemViewController: UIViewController {
         // Do any additional setup after loading the view.
         
     }
+    
+    func loadStores() {
+    
+        //You left off right here huff. 
+        
+    }
+    
+    
+    
+    
+    
+    
 
     @IBAction func buSelectPicture(_ sender: Any) {
         
