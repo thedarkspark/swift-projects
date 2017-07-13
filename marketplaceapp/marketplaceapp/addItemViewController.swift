@@ -21,6 +21,8 @@ class addItemViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        loadStores()
 
         // Do any additional setup after loading the view.
         
@@ -29,12 +31,19 @@ class addItemViewController: UIViewController {
     func loadStores() {
     
         //You left off right here huff. 
+        let fetchRequest: NSFetchRequest<StoreType> = StoreType.fetchRequest()
+        
+        do{
+            
+            listOfStores = try context.fetch(fetchRequest)
+            
+        }catch{
+            
+            print("Cannot print to store")
+        
+        }
         
     }
-    
-    
-    
-    
     
     
 
