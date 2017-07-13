@@ -10,11 +10,14 @@ import UIKit
 
 import CoreData
 
-class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate {
+    @IBOutlet weak var showView: UIImageView!
 
     @IBOutlet weak var txtItemName: UITextField!
     
     @IBOutlet weak var storePicker: UIPickerView!
+    
+    var imagePicker:UIImagePickerController!
     
     var listOfStores = [StoreType]()
     
@@ -27,6 +30,10 @@ class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         storePicker.delegate = self
         
         storePicker.dataSource = self
+        
+        imagePicker = UIImagePickerController()
+        
+        imagePicker.delegate = (self as UIImagePickerControllerDelegate as! UIImagePickerControllerDelegate & UINavigationControllerDelegate)
 
         // Do any additional setup after loading the view.
         
@@ -64,9 +71,17 @@ class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
+        if component==0 {
+        
         let store = listOfStores[row]
         
         return store.store_name
+            
+        } else {
+        
+            return "Test complete"
+            
+        }
         
     }
     
@@ -74,7 +89,17 @@ class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         //Right here is where you come back
         
-        print("Select Image")
+        present(imagePicker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        
+            
+            
+        }
         
     }
     

@@ -80,6 +80,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="showView" destination="bi2-wT-lq0" id="kfx-8I-r4T"/>
                         <outlet property="storePicker" destination="v7h-PN-xmr" id="NiS-IS-qqd"/>
                         <outlet property="txtItemName" destination="1Na-xn-zy3" id="Eo8-N1-c2v"/>
                     </connections>
