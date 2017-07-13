@@ -28,17 +28,22 @@
                                 <items>
                                     <navigationItem id="1Fm-d8-rBR">
                                         <leftBarButtonItems>
-                                            <barButtonItem title="Back" id="K93-6u-nev"/>
+                                            <barButtonItem title="Back" id="K93-6u-nev">
+                                                <connections>
+                                                    <action selector="buBack:" destination="5rv-Nz-ISd" id="h9Z-yg-NcH"/>
+                                                </connections>
+                                            </barButtonItem>
                                             <barButtonItem title="Add Store" id="3m3-pP-x8K">
                                                 <connections>
                                                     <segue destination="BYZ-38-t0r" kind="show" id="4Mu-vK-RFl"/>
                                                 </connections>
                                             </barButtonItem>
                                         </leftBarButtonItems>
-                                        <rightBarButtonItems>
-                                            <barButtonItem systemItem="add" id="I6l-b3-jqh"/>
-                                            <barButtonItem systemItem="trash" id="9ga-w9-VkH"/>
-                                        </rightBarButtonItems>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="I6l-b3-jqh">
+                                            <connections>
+                                                <action selector="buSave:" destination="5rv-Nz-ISd" id="zlU-sX-m3a"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -59,6 +64,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFT-mJ-ZeO">
                                 <rect key="frame" x="111" y="168" width="152" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="buSelectPicture:" destination="5rv-Nz-ISd" eventType="touchUpInside" id="p02-B5-Z6D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -72,6 +80,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="storePicker" destination="v7h-PN-xmr" id="NiS-IS-qqd"/>
                         <outlet property="txtItemName" destination="1Na-xn-zy3" id="Eo8-N1-c2v"/>
                     </connections>
                 </viewController>

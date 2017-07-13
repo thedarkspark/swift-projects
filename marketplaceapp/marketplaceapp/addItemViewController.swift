@@ -12,6 +12,9 @@ class addItemViewController: UIViewController {
 
     @IBOutlet weak var txtItemName: UITextField!
     
+    @IBOutlet weak var storePicker: UIPickerView!
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -19,4 +22,32 @@ class addItemViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func buSelectPicture(_ sender: Any) {
+        
+        //Right here is where you come back
+        
+        print("Select Image")
+        
+    }
+    
+    @IBAction func buSave(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func buBack(_ sender: Any) {
+        
+        
+    }
+    
+    
+    
 }
+
+
+
+
+
+
+
+
