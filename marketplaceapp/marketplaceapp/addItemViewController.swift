@@ -14,12 +14,12 @@ class addItemViewController: UIViewController {
     
     @IBOutlet weak var storePicker: UIPickerView!
     
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
 
     @IBAction func buSelectPicture(_ sender: Any) {
