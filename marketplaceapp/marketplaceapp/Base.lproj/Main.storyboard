@@ -71,6 +71,9 @@
                             <constraint firstItem="1Na-xn-zy3" firstAttribute="trailing" secondItem="jUi-gE-6Vc" secondAttribute="trailingMargin" id="yt9-Bs-qYZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtItemName" destination="1Na-xn-zy3" id="Eo8-N1-c2v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oos-Mj-Kgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
