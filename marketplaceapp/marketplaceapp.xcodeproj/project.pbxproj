@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA3D8C721F16FCD40065E741 /* Flyhightech-Icon-tiny-6.png in Resources */ = {isa = PBXBuildFile; fileRef = BA3D8C711F16FCD40065E741 /* Flyhightech-Icon-tiny-6.png */; };
 		BA66EAE81F16EEA500580FFB /* addItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66EAE71F16EEA500580FFB /* addItemViewController.swift */; };
 		BA9BAB571F16024100C318E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9BAB561F16024100C318E7 /* AppDelegate.swift */; };
 		BA9BAB591F16024100C318E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9BAB581F16024100C318E7 /* ViewController.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BA3D8C711F16FCD40065E741 /* Flyhightech-Icon-tiny-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flyhightech-Icon-tiny-6.png"; sourceTree = "<group>"; };
 		BA66EAE71F16EEA500580FFB /* addItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addItemViewController.swift; sourceTree = "<group>"; };
 		BA9BAB531F16024000C318E7 /* marketplaceapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marketplaceapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9BAB561F16024100C318E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 				BA9BAB581F16024100C318E7 /* ViewController.swift */,
 				BA9BAB5A1F16024100C318E7 /* Main.storyboard */,
 				BA9BAB601F16024100C318E7 /* Assets.xcassets */,
-				BA3D8C711F16FCD40065E741 /* Flyhightech-Icon-tiny-6.png */,
 				BA9BAB621F16024100C318E7 /* LaunchScreen.storyboard */,
 				BA66EAE71F16EEA500580FFB /* addItemViewController.swift */,
 				BA9BAB651F16024100C318E7 /* Info.plist */,
@@ -136,7 +133,6 @@
 				BA9BAB641F16024100C318E7 /* LaunchScreen.storyboard in Resources */,
 				BA9BAB611F16024100C318E7 /* Assets.xcassets in Resources */,
 				BA9BAB5C1F16024100C318E7 /* Main.storyboard in Resources */,
-				BA3D8C721F16FCD40065E741 /* Flyhightech-Icon-tiny-6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
