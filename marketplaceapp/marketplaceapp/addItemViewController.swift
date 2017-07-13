@@ -10,7 +10,7 @@ import UIKit
 
 import CoreData
 
-class addItemViewController: UIViewController {
+class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var txtItemName: UITextField!
     
@@ -23,6 +23,10 @@ class addItemViewController: UIViewController {
         super.viewDidLoad()
         
         loadStores()
+        
+        storePicker.delegate = self
+        
+        storePicker.dataSource = self
 
         // Do any additional setup after loading the view.
         
@@ -30,7 +34,6 @@ class addItemViewController: UIViewController {
     
     func loadStores() {
     
-        //You left off right here huff. 
         let fetchRequest: NSFetchRequest<StoreType> = StoreType.fetchRequest()
         
         do{
@@ -45,8 +48,28 @@ class addItemViewController: UIViewController {
         
     }
     
+    //Here is where we added the information for th UIPickerView component.
     
-
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        
+        return 1
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        return listOfStores.count
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        let store = listOfStores[row]
+        
+        return store.store_name
+        
+    }
+    
     @IBAction func buSelectPicture(_ sender: Any) {
         
         //Right here is where you come back
@@ -57,15 +80,11 @@ class addItemViewController: UIViewController {
     
     @IBAction func buSave(_ sender: Any) {
         
-        
     }
     
     @IBAction func buBack(_ sender: Any) {
         
-        
     }
-    
-    
     
 }
 
