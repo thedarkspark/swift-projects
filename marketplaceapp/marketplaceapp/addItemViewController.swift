@@ -10,7 +10,8 @@ import UIKit
 
 import CoreData
 
-class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate {
+class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
     @IBOutlet weak var showView: UIImageView!
 
     @IBOutlet weak var txtItemName: UITextField!
@@ -33,8 +34,8 @@ class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         imagePicker = UIImagePickerController()
         
-        imagePicker.delegate = (self as UIImagePickerControllerDelegate as! UIImagePickerControllerDelegate & UINavigationControllerDelegate)
-
+        imagePicker.delegate = self
+        
         // Do any additional setup after loading the view.
         
     }
@@ -71,17 +72,9 @@ class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        if component==0 {
-        
         let store = listOfStores[row]
         
         return store.store_name
-            
-        } else {
-        
-            return "Test complete"
-            
-        }
         
     }
     
@@ -97,9 +90,11 @@ class addItemViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
         
-            
+            showView.image = image
             
         }
+        
+        imagePicker.dismiss(animated: true, completion: nil)
         
     }
     
