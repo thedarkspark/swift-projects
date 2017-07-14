@@ -39,12 +39,16 @@
                                 <rect key="frame" x="164" y="98" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="submitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O1k-W6-pgh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="p9q-pO-Csk" id="gOR-Wb-Eif"/>
+                        <outlet property="logInButton" destination="CTt-s1-0hP" id="JKb-bv-F7q"/>
                         <outlet property="textField" destination="N81-y8-Exw" id="O4u-l1-TGj"/>
                     </connections>
                 </viewController>
