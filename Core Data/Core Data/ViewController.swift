@@ -21,6 +21,41 @@ class ViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         let context = appDelegate.persistentContainer.viewContext
+        
+        let newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
+        
+        newUser.setValue("Bernie", forKey: "username")
+        
+        newUser.setValue("myPaSS", forKey: "password")
+        
+        newUser.setValue(35, forKey: "age")
+        
+        do {
+            
+            try context.save()
+            
+            print("Saved")
+        
+        } catch {
+            
+            print("There was a fuck up!")
+        
+        }
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+
+        request.returnsObjectsAsFaults = false
+        
+        do {
+        
+            let results = try context.fetch(request)
+            
+        } catch {
+        
+            print("Couldn't catch results")
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
