@@ -50,9 +50,27 @@ class ViewController: UIViewController {
         
             let results = try context.fetch(request)
             
+            if results.count > 0 {
+                
+                for result in results as! [NSManagedObject] {
+                
+                    if let username = result.value(forKey: "username") as? String {
+                    
+                        print("username")
+                        
+                    }
+                    
+                }
+            
+            } else {
+            
+                print("No Results")
+                
+            }
+            
         } catch {
         
-            print("Couldn't catch results")
+            print("Couldn't fetch results")
             
         }
         
