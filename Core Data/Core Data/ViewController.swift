@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         newUser.setValue("myPaSS", forKey: "password")
         
-        newUser.setValue(35, forKey: "age")
+        newUser.setValue(2, forKey: "age")
         
         do {
             
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
         
-        request.predicate = NSPredicate(format: "name = %@", "Kirsten")
+        request.predicate = NSPredicate(format: "username = %@", "Kirsten")
 
         request.returnsObjectsAsFaults = false
         
