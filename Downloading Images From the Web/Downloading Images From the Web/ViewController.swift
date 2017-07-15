@@ -10,13 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var radioheadImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let url = URL(string: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Radiohead.jpg/270px-Radiohead.jpg)
+        let url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Radiohead.jpg/270px-Radiohead.jpg")
         
-        let request = NSMutableURLRequest(url: url)
+        let request = NSMutableURLRequest(url: url!)
         
         let task =  URLSession.shared.dataTask(with: request as URLRequest) {
         
@@ -26,17 +28,19 @@ class ViewController: UIViewController {
             
                 print("Error")
                 
-            } else {
+            }   else {
                 
-                if let data = data {
+                    if let data = data {
                 
-                    if let radioheadImage = UIImage(data: data) {
+                        if let radioheadImage = UIImage(data: data) {
+                            
+                            self.radioheadImageView.image = radioheadImage
+                    
+                        }
                     
                     }
-                    
-                }
             
-              }
+                }
         
         }
         
