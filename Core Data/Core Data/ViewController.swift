@@ -42,6 +42,8 @@ class ViewController: UIViewController {
         
         }
         
+        //here you set up the request
+        
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
         
         request.predicate = NSPredicate(format: "username = %@", "Kirsten")
