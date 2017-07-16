@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         let request = NSMutableURLRequest(url: url!)
         
-        let task =  URLSession.shared.dataTask(with: request as URLRequest) {
+        _ =  URLSession.shared.dataTask(with: request as URLRequest) {
         
         data, response, error in
             
@@ -36,6 +36,28 @@ class ViewController: UIViewController {
                             
                             self.radioheadImageView.image = radioheadImage
                     
+                            let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+                            
+                            if documentsPath.count > 0 {
+                            
+                                let documentsDirectory = documentsPath[0]
+                                
+                                    let restorePath = documentsDirectory + "/Radiohead.jpg"
+                                    
+                                    do {
+                                    
+                                        try UIImageJPEGRepresentation(radioheadImage, 1)? .write(to: URL(fileURLWithPath: savePath))
+                                    
+                                    } catch {
+                                    
+                                        // process error
+                                        
+                                    }
+                                
+                                }
+                            
+                            }
+                            
                         }
                     
                     }
@@ -54,5 +76,5 @@ class ViewController: UIViewController {
     }
 
 
-}
+
 
