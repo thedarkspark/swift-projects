@@ -31,10 +31,22 @@ class GameScene: SKScene {
         sprite1?.position = CGPoint(x: 0, y: -500)
         
         sprite2?.color = UIColor.blue
+        
+        let shapeNode = SKShapeNode(circleOfRadius: 100)
+        
+        shapeNode.fillColor = UIColor.red
+        
+        shapeNode.position = CGPoint(x: 0, y: 0)
+        
+        self.addChild(shapeNode)
+        
+        let action = SKAction.rotate(byAngle: CGFloat(6.28), duration: 2)
+        
+        sprite1?.run(action)
+        
+        //sprite2?.run(action)
        
     }
-    
-// Last thing I did was delete all the touch is functions.
     
     override func update(_ currentTime: TimeInterval) {
         
