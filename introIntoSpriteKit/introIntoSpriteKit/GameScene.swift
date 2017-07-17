@@ -44,8 +44,6 @@ class GameScene: SKScene {
         
         sprite1?.run(action)
         
-        //sprite2?.run(action)
-       
     }
     
     override func update(_ currentTime: TimeInterval) {
