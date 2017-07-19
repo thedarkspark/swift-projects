@@ -15,7 +15,10 @@ import SpriteKit
 class ActionScene: SKScene {
     
     override func didMove(to view: SKView) {
-        <#code#>
+        
+        // 0sec: moveby 100, 100 and scale 3x
+        
+        // 1sec: 
     }
 
     override func update(_ currentTime: TimeInterval) {
