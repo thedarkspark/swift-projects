@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let url = URL(string: "http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=bbcc2a4f563a9c647d9a642cbf94b17e")!
+        let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=bbcc2a4f563a9c647d9a642cbf94b17e")!
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
