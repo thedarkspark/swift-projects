@@ -22,7 +22,7 @@ class ViewController: UIViewController {
             
             if error != nil {
                 
-                print("Error")
+                print(error!)
                 
             } else {
                 
