@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var cityTextField: UITextField!
+    
+    @IBAction func submitButton(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,7 +40,13 @@ class ViewController: UIViewController {
                 
                 print(jsonResult)
                     
+                   print(jsonResult["name"])
                     
+                    if let description = ((jsonResult["weather"] as? NSArray)?[0] as? NSDictionary)? ["description"] as? String {
+                        
+                        print(description)
+                    
+                    }
                 
                 } catch {
                 
