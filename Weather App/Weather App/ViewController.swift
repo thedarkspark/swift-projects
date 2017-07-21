@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     @IBAction func submitButton(_ sender: Any) {
         
-        let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?q= " + cityTextField.text! + ",uk&appid=bbcc2a4f563a9c647d9a642cbf94b17e")!
+        if let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?q= " + cityTextField.text!.replacingOccurrences(of: " ", with: "%20") + ",uk&appid=bbcc2a4f563a9c647d9a642cbf94b17e") {
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
                     
                     do {
                         
-                        let jsonResult = try JSONSerialization.jsonObject(with: urlContent, options: JSONSerialization.ReadingOptions.mutableContainers)
+                        let jsonResult = try JSONSerialization.jsonObject(with: urlContent, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                         
                         print(jsonResult)
                         
@@ -38,7 +38,11 @@ class ViewController: UIViewController {
                         
                         if let description = ((jsonResult["weather"] as? NSArray)?[0] as? NSDictionary)? ["description"] as? String {
                             
-                            DispatchQueue.main.sync(execute: self.resultLabel.text = description)
+                            DispatchQueue.main.sync(execute: {
+                                
+                                self.resultLabel.text = description
+                            
+                            })
                             
                         }
                         
@@ -55,7 +59,12 @@ class ViewController: UIViewController {
         }
         
         task.resume()
-
+        
+        } else {
+        
+            resultLabel.text = ("Couldn't find the weather for that location. Sorry!")
+            
+        }
         
     }
     
