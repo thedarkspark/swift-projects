@@ -13,4 +13,14 @@ import MultipeerConnectivity
 
 class MPCHandler: NSObject {
 
+    var peerID:MCPeerID!
+    
+    var session:MCSession!
+
+    var browser:MCBrowserViewController!
+    
+    var advertiser:MCAdvertiserAssistant? = nil
+    
+    
+    
 }
