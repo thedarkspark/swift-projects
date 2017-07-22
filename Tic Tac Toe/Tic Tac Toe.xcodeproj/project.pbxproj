@@ -12,6 +12,7 @@
 		BAD2DD2B1F23311C0074D590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD2DD291F23311C0074D590 /* Main.storyboard */; };
 		BAD2DD2D1F23311C0074D590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD2DD2C1F23311C0074D590 /* Assets.xcassets */; };
 		BAD2DD301F23311C0074D590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD2DD2E1F23311C0074D590 /* LaunchScreen.storyboard */; };
+		BAD2DD381F2399F70074D590 /* TTTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2DD371F2399F70074D590 /* TTTImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BAD2DD2C1F23311C0074D590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD2DD2F1F23311C0074D590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD2DD311F23311C0074D590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD2DD371F2399F70074D590 /* TTTImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				BAD2DD251F23311C0074D590 /* AppDelegate.swift */,
 				BAD2DD271F23311C0074D590 /* ViewController.swift */,
+				BAD2DD371F2399F70074D590 /* TTTImageView.swift */,
 				BAD2DD291F23311C0074D590 /* Main.storyboard */,
 				BAD2DD2C1F23311C0074D590 /* Assets.xcassets */,
 				BAD2DD2E1F23311C0074D590 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				BAD2DD281F23311C0074D590 /* ViewController.swift in Sources */,
 				BAD2DD261F23311C0074D590 /* AppDelegate.swift in Sources */,
+				BAD2DD381F2399F70074D590 /* TTTImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
