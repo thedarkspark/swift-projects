@@ -21,6 +21,20 @@ class MPCHandler: NSObject {
     
     var advertiser:MCAdvertiserAssistant? = nil
     
+    func setupPeerWithDisplayName(displayName:String) {
+        
+    }
     
+    func setupSession() {
+    
+    }
+    
+    func setupBrowser() {
+    
+    }
+    
+    func advertiseSelf(advertise:Bool) {
+    
+    }
     
 }
