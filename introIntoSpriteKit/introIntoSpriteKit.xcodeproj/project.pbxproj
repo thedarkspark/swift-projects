@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA16B6F11F264B8D0034910A /* physicsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA16B6F01F264B8D0034910A /* physicsScene.sks */; };
+		BA16B6F31F264BB50034910A /* physicsSceneKit.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA16B6F21F264BB50034910A /* physicsSceneKit.sks */; };
+		BA16B6F51F264BEA0034910A /* pScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16B6F41F264BEA0034910A /* pScene.swift */; };
 		BA2050531F1B4684006DF974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2050521F1B4684006DF974 /* AppDelegate.swift */; };
 		BA2050551F1B4684006DF974 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA2050541F1B4684006DF974 /* GameScene.sks */; };
 		BA2050571F1B4684006DF974 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA2050561F1B4684006DF974 /* Actions.sks */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA16B6F01F264B8D0034910A /* physicsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = physicsScene.sks; sourceTree = "<group>"; };
+		BA16B6F21F264BB50034910A /* physicsSceneKit.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = physicsSceneKit.sks; sourceTree = "<group>"; };
+		BA16B6F41F264BEA0034910A /* pScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pScene.swift; sourceTree = "<group>"; };
 		BA20504F1F1B4683006DF974 /* introIntoSpriteKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = introIntoSpriteKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2050521F1B4684006DF974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA2050541F1B4684006DF974 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -114,7 +120,10 @@
 				BA20505A1F1B4684006DF974 /* GameViewController.swift */,
 				BA20505C1F1B4684006DF974 /* Main.storyboard */,
 				BA20505F1F1B4684006DF974 /* Assets.xcassets */,
+				BA16B6F21F264BB50034910A /* physicsSceneKit.sks */,
 				BA2050611F1B4684006DF974 /* LaunchScreen.storyboard */,
+				BA16B6F01F264B8D0034910A /* physicsScene.sks */,
+				BA16B6F41F264BEA0034910A /* pScene.swift */,
 				BA2050641F1B4684006DF974 /* Info.plist */,
 				BA2050861F1D48FE006DF974 /* ActionScene.sks */,
 				BA20508A1F1D4A48006DF974 /* ActionScene.swift */,
@@ -253,6 +262,8 @@
 				BA2050871F1D48FE006DF974 /* ActionScene.sks in Resources */,
 				BA20505E1F1B4684006DF974 /* Main.storyboard in Resources */,
 				BA2050551F1B4684006DF974 /* GameScene.sks in Resources */,
+				BA16B6F31F264BB50034910A /* physicsSceneKit.sks in Resources */,
+				BA16B6F11F264B8D0034910A /* physicsScene.sks in Resources */,
 				BA2050601F1B4684006DF974 /* Assets.xcassets in Resources */,
 				BA2050631F1B4684006DF974 /* LaunchScreen.storyboard in Resources */,
 				BA2050571F1B4684006DF974 /* Actions.sks in Resources */,
@@ -282,6 +293,7 @@
 			files = (
 				BA20508B1F1D4A48006DF974 /* ActionScene.swift in Sources */,
 				BA2050591F1B4684006DF974 /* GameScene.swift in Sources */,
+				BA16B6F51F264BEA0034910A /* pScene.swift in Sources */,
 				BA20505B1F1B4684006DF974 /* GameViewController.swift in Sources */,
 				BA2050531F1B4684006DF974 /* AppDelegate.swift in Sources */,
 			);
