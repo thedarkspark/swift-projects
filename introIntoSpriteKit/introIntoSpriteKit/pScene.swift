@@ -24,6 +24,20 @@ class PhysicsScene: SKScene {
         
         sprite2 = self.childNode(withName: "spriteNode2") as? SKSpriteNode
         
+        let edgePhysicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
+        
+        edgePhysicsBody.restitution = 1
+        
+        edgePhysicsBody.friction = 0
+        
+        edgePhysicsBody.categoryBitMask = 0b1
+        
+        edgePhysicsBody.collisionBitMask = 0b10 | 0b100
+        
+        edgePhysicsBody.contactTestBitMask = 0b10 | 0b100
+        
+        self.physicsBody = edgePhysicsBody
+        
     }
 
 }
