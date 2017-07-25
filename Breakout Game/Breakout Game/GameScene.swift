@@ -15,7 +15,17 @@ class GameScene: SKScene {
     
     var ball:SKSpriteNode?
     
+    enum bitMasks : UInt32 {
+        
+        case edgeBitMask = 0b1
+        
+    }
+    
     override func didMove(to view: SKView) {
+        
+        playerPaddle = self.childNode(withName: "playerPaddle") as? SKSpriteNode
+        
+        ball = self.childNode(withName: "ball") as? SKSpriteNode
         
     }
     
