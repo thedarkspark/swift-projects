@@ -53,7 +53,21 @@ class ViewController: UIViewController {
         
         darkBlueBtn.isHidden = true
         
-        powerBtn.isHidden = true 
+        powerBtn.isHidden = true
+        
+        player.play()
+        
+        UIView.animate(withDuration: 2.3, animations: { 
+            
+            self.rocket.frame = CGRect(x: 0, y: 20, width: 375, height: 402)
+            
+        }) { (finished) in
+
+            self.hustleLbl.isHidden = false
+            
+            self.onLbl.isHidden = false
+            
+        }
         
     }
 
