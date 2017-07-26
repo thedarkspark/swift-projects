@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>hustle-node.xcscheme</key>
+		<key>Hustle Mode.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>BA4B5EBF1F28F21E00B18BBF</key>
+		<key>BAA39B751F2938C400FC2185</key>
 		<dict>
 			<key>primary</key>
 			<true/>

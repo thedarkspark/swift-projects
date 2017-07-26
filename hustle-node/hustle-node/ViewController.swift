@@ -9,17 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var darkBlueBG: UIImageView!
+    
+    @IBOutlet weak var powerButtonOutlet: UIButton!
 
+    @IBOutlet weak var cloudHolder: UIView!
+    
+    @IBOutlet weak var rocket: UIImageView!
+    
+    @IBOutlet weak var hustleLbl: UILabel!
+    
+    @IBOutlet weak var onLbl: UILabel!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func powerBtnPressed(_ sender: Any) {
+        
+        print("Test just to see")
+        
     }
-
-
+    
+    
 }
 
