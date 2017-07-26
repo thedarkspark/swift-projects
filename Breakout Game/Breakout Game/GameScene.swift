@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+
 import GameplayKit
 
 class GameScene: SKScene {
@@ -15,9 +16,13 @@ class GameScene: SKScene {
     
     var ball:SKSpriteNode?
     
+    var startImpulse: CGFloat = 50
+    
     enum bitMasks : UInt32 {
         
         case edgeBitMask = 0b1
+        case playerPaddleBitMask = 0b10
+        case ballBitMask = 0b100
         
     }
     
@@ -26,6 +31,28 @@ class GameScene: SKScene {
         playerPaddle = self.childNode(withName: "playerPaddle") as? SKSpriteNode
         
         ball = self.childNode(withName: "ball") as? SKSpriteNode
+        
+        let edgePhysicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
+        
+        edgePhysicsBody.categoryBitMask = bitMasks.edgeBitMask.rawValue
+        
+        edgePhysicsBody.contactTestBitMask = bitMasks.ballBitMask.rawValue
+        
+        edgePhysicsBody.collisionBitMask = bitMasks.ballBitMask.rawValue
+        
+        edgePhysicsBody.friction = 0
+        
+        edgePhysicsBody.restitution = 1
+        
+        edgePhysicsBody.isDynamic = false
+        
+        self.physicsBody = edgePhysicsBody
+        
+        ball?.physicsBody?.contactTestBitMask = bitMasks.edgeBitMask.rawValue | bitMasks.playerPaddleBitMask.rawValue
+        
+        ball?.physicsBody?.collisionBitMask = bitMasks.edgeBitMask.rawValue | bitMasks.playerPaddleBitMask.rawValue
+        
+        ball?.physicsBody?.applyImpulse(CGVector(dx: startImpulse, dy: startImpulse))
         
     }
     
@@ -42,11 +69,7 @@ class GameScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
-        
-        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
+  
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {

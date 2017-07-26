@@ -2,7 +2,16 @@
 
 import UIKit
 
-var str = "Hello, playground"
+let questionWord = "Else"
+let connectorWord = "Why"
+let question = "\(connectorWord + " " + questionWord)?"
 
-var greeting = "Hello World!"
+let incessantQuestion = "\(question + " " + question + " " + question + " " + question)"
+
+let name = "Kim"
+let summons = "\(name) \(name). \(name)!"
+
+let botheration = "\(summons + " " + incessantQuestion)"
+
+print(botheration)
 
